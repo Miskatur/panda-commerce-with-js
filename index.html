@@ -157,7 +157,10 @@
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 <div class="col">
                     <div class="card h-100 border border-0 shadow-lg">
-                        <img src="images/shoes/shoe-1.png" class="card-img-top" alt="...">
+                        <!-- <img id=" shoe1" onmouseover="setNewImage()" onmouseout="setOldImage()" -->
+                        <img src="images/shoes/shoe-1.png" class="card-img-top" alt="..."
+                            onmouseover="this.src='/images/shoes/shoe-2.png'"
+                            onmouseout="this.src='/images/shoes/shoe-1.png'">
                         <div class="card-body">
                             <h5 class="card-title">Supply 350</h5>
                             <h2 class="card-title">$160</h2>
@@ -165,13 +168,15 @@
                                 additional content. This content is a little bit longer.</p>
                         </div>
                         <div class="m-3">
-                            <div class="btn panda-btn-bg">Buy Now</div>
+                            <div id="buy-now" class="btn panda-btn-bg custom">Buy Now</div>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card h-100 border border-0 shadow-lg">
-                        <img src="images/shoes/shoe-1.png" class="card-img-top" alt="...">
+                        <img src="images/shoes/shoe-2.png" class="card-img-top" id=" shoe-2" alt="..."
+                            onmouseover="this.src='/images/shoes/shoe-3.png'"
+                            onmouseout="this.src='/images/shoes/shoe-2.png'">
                         <div class="card-body">
                             <h5 class="card-title">Nike 360</h5>
                             <h2 class="card-title">$160</h2>
@@ -179,13 +184,15 @@
                                 additional content. This content is a little bit longer.</p>
                         </div>
                         <div class="m-3">
-                            <div class="btn panda-btn-bg">Buy Now</div>
+                            <div class="btn panda-btn-bg custom">Buy Now</div>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card h-100 border border-0 shadow-lg">
-                        <img src="images/shoes/shoe-1.png" class="card-img-top" alt="...">
+                        <img src="images/shoes/shoe-3.png" class="card-img-top" id=" shoe-3" alt="..."
+                            onmouseover="this.src='/images/shoes/shoe-1.png'"
+                            onmouseout="this.src='/images/shoes/shoe-3.png'">
                         <div class="card-body">
                             <h5 class="card-title">Red Airmax</h5>
                             <h2 class="card-title">$160</h2>
@@ -193,7 +200,7 @@
                                 additional content. This content is a little bit longer.</p>
                         </div>
                         <div class="m-3">
-                            <div class="btn panda-btn-bg">Buy Now</div>
+                            <div class="btn panda-btn-bg custom">Buy Now</div>
                         </div>
                     </div>
                 </div>
@@ -209,7 +216,9 @@
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 <div class="col">
                     <div class="card h-100 border border-0 shadow-lg">
-                        <img src="images/bags/bag-1.png" class="card-img-top" alt="...">
+                        <img src="images/bags/bag-1.png" class="card-img-top" alt="..."
+                            onmouseover="this.src='/images/bags/bag-2.png'"
+                            onmouseout="this.src='/images/bags/bag-1.png'">
                         <div class="card-body">
                             <h5 class="card-title">Red Laltu Bag</h5>
                             <h2 class="card-title">$160</h2>
@@ -217,13 +226,15 @@
                                 additional content. This content is a little bit longer.</p>
                         </div>
                         <div class="m-3">
-                            <div class="btn panda-btn-bg">Buy Now</div>
+                            <div class="btn panda-btn-bg custom">Buy Now</div>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card h-100 border border-0 shadow-lg">
-                        <img src="images/bags/bag-2.png" class="card-img-top" alt="...">
+                        <img src="images/bags/bag-2.png" class="card-img-top" alt="..."
+                            onmouseover="this.src='/images/bags/bag-3.png'"
+                            onmouseout="this.src='/images/bags/bag-2.png'">
                         <div class="card-body">
                             <h5 class="card-title">Nike 360</h5>
                             <h2 class="card-title">$160</h2>
@@ -231,13 +242,15 @@
                                 additional content. This content is a little bit longer.</p>
                         </div>
                         <div class="m-3">
-                            <div class="btn panda-btn-bg">Buy Now</div>
+                            <div class="btn panda-btn-bg custom">Buy Now</div>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card h-100 border border-0 shadow-lg">
-                        <img src="images/bags/bag-3.png" class="card-img-top" alt="...">
+                        <img src="images/bags/bag-3.png" class="card-img-top" alt="..."
+                            onmouseover="this.src='/images/bags/bag-1.png'"
+                            onmouseout="this.src='/images/bags/bag-3.png'">
                         <div class="card-body">
                             <h5 class="card-title">Red Airmax</h5>
                             <h2 class="card-title">$160</h2>
@@ -245,7 +258,7 @@
                                 additional content. This content is a little bit longer.</p>
                         </div>
                         <div class="m-3">
-                            <div class="btn panda-btn-bg">Buy Now</div>
+                            <div class="btn panda-btn-bg custom">Buy Now</div>
                         </div>
                     </div>
                 </div>
@@ -266,7 +279,7 @@
                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                     </div>
 
-                    <button type="submit" class="btn panda-btn-bg">Submit</button>
+                    <button type="submit" class="btn panda-btn-bg" id="submit-button" disabled>Submit</button>
                 </form>
             </div>
 
@@ -282,6 +295,7 @@
     <!-----------------------
            java script  
     ------------------------>
+    <script src="js/javascript.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
